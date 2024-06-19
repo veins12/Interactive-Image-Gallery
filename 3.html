@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <div class="img-gallery">
+        <img src="images/art-artistic-artwork-fantasy-wallpaper-preview.jpg" data-title ="Artistic Fantasy" onclick="openFullImg(0)">
+        <img src="images/batman-v-superman-dawn-of-justice-dc-comics-ben-affleck-wallpaper-preview.jpg" data-title ="Batman" onclick="openFullImg(1)">
+        <img src="images/breaking-bad-tv-shows-artwork-artist-wallpaper-preview.jpg" data-title ="Breaking Bad" onclick="openFullImg(2)">
+        <img src="images/breaking-bad-walter-white-heisenberg-graffiti-drawing-hd-wallpaper-preview.jpg" data-title="Walter White" onclick="openFullImg(3)">
+        <img src="images/HD-wallpaper-batman-video-game-batman-logo-batman-symbol-batman-arkham-origins.jpg" data-title="Batmann" onclick="openFullImg(4)">
+        <img src="images/HD-wallpaper-superman-super.jpg" data-title="Superman" onclick="openFullImg(5)">
+        <img src="images/house-stark-43i0jar1kxotz7f7.jpg" data-title="Game of Thrones" onclick="openFullImg(6)">
+        <img src="images/MV5BMTQ2MTgyNzY2MV5BMl5BanBnXkFtZTgwOTA5MjkxNjE@._V1_.jpg" data-title="Movie Poster" onclick="openFullImg(7)">
+        <img src="images/pS3h3x15YsVQrX92flGK8OeDK3L4dO2rvQV--yK6Wgs.webp" data-title="Artistic-Design" onclick="openFullImg(8)">
+        <img src="images/tv-show-game-of-thrones-jon-snow-kit-harington-hd-wallpaper-preview.jpg" data-title="Jon Snow" onclick="openFullImg(9)">
+        <img src="images/zoro.jpg" data-title="Zoro" onclick="openFullImg(10)">
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img  id="fullImg">
+        <span class="close" onclick="closeFullImg()">X</span>
+        <span class="nav prev" onclick="prevImg()">&#10094;</span>
+        <img src="images.jpg" id="fullImg">
+        <span class="nav next" onclick="nextImg()">&#10095;</span>
+        <div id="imgTitle" class="title"></div>
+    </div>
+    <script src="3.js"></script>
+</body>
+</html>
